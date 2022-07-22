@@ -21,3 +21,6 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
+    - name: "Configure AWS Credentials" Action For GitHub Actions
+      uses: aws-actions/configure-aws-credentials@v1
+
